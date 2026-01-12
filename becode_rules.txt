@@ -1,0 +1,68 @@
+#Moodle
+
+You have to go on moodle every day 4 times (ideally in these slots):
+9:00, morning check-in
+12:30, morning check-out
+13:30, afternoon check-in
+17:00, afternoon check-out
+
+Check-in, up to 10 minutes before the time. For example, morning check in can happen from 8:50 to 9:00. 
+Check out up to 10 minutes after the time. For example, morning check out can happen from 12:30 to 12:40.
+
+If you forget to check-in or check-out, warn your coach. DO NOT check-in whenever you are not on campus or in a discord room. This will be considered unjustified absence.
+
+#Discord
+
+Discord is where we have our home working days happen.
+
+When you are in discord, you have to be on a table. You can mute yourself, but you cannot deafen yourself because people have to be able to reach you.
+
+Tech talks happen in the main-room channel. Download: https://discord.com/download
+
+Do not use the @everyone tag because it will notify everyone on the server (approx 500 people). If you want to tag everyone just tag your class (example @Thomas5).
+
+Discord link: [Insert Discord Link Here]
+
+#Google
+
+We organise ourselves through a google drive folder and a google calendar. The links are:
+To the calendar, giving you schedule and distribution of on-campus days: [Insert Calendar Link Here]
+To the calendar giving you informations about Events related to data:
+https://calendar.google.com/calendar/embed?src=c_d7e422ddda419a9d4c78654a6024bcbf8af6b7697903e707f20826c7871315aa%40group.calendar.google.com&ctz=Europe%2FBrussels
+
+#Tech Talks
+
+You can make a tech talk about any tech topic you want, example subjects:
+- What is AI image generation
+- How does AI learn
+- Quiz on Python
+- What is web development
+- Data Analysis vs Data Engineering
+(Invite a friend who works in the field to explain his job)
+
+These are just silly examples. You can do whichever one you want as long as it is related to tech. The schedule can be found in this spreadsheet which you can edit: [Insert Tech Talk SpreadSheet Link Here]
+
+#You cannot attend class
+
+If you cannot attend class for any reason, usually when you are sick. There are 2 steps:
+Warn your day coach (main coach or co-coach) and campus coordinator by email. Example emails:
+main.coach@becode.org
+co.coach@becode.org
+campus.coordinator@becode.org
+You have to have a justification paper, upload it to moodle. If it is too late to upload it, send it to your campus coordinator and your main coach.
+
+#Internships
+
+Internships at BeCode Wallonia last between 1 and 3 months. In Brussels it's between 1 and 2 months.
+Earliest start date is the day the summer pastures start.
+Latest end date is 3 months after the end of the training.
+When you find someone interested to take you in for an internship. The first steps to follow are first to fill in the Projet de Stage.docx document. Make sure all the fields are filled. And then send it to your campus coordinator as well as to your main coach by email.
+
+Once the projet de stage has been approved, you may request the link to an online form service called sphinx in which you will have to copy the details of the approved projet de stage. Once this is done, the document will be sent to be signed electronically.
+
+#Holidays
+
+There will be two main holiday weeks during the bootcamp:
+Holiday at the end of the Hill
+Holiday towards the end of the Mountain
+We might also give some long weekends if it suits well.
