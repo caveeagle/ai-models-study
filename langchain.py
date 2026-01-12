@@ -64,6 +64,7 @@ retriever = db.as_retriever(search_kwargs={'k': TOP_K})
 
 TEMPERATURE = 0.2  # true value = 0.2
 
+assert 0 <= TEMPERATURE <= 2 , 'TEMPERATURE must be between 0 and 2.0'
 
 llm = ChatGoogleGenerativeAI(
     model='gemini-2.0-flash-lite',
