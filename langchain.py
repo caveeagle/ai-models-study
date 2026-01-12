@@ -11,13 +11,15 @@ import secret_config
 
 ############################################
 
+print('Begin to work...')
+
 # -------------------------
 # Load document
 # -------------------------
 
 text_file = 'becode_rules.txt'
 
-with open(text_file, "r", encoding="utf-8") as f:
+with open(text_file, 'r', encoding='utf-8') as f:
     text = f.read()
 
 # -------------------------
@@ -36,10 +38,10 @@ chunks = splitter.split_text(text)
 API_KEY = secret_config.API_KEY
 
 if not API_KEY or not API_KEY.strip():
-    raise ValueError("API_KEY is empty or not set")
+    raise ValueError('API_KEY is empty or not set')
 
 embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/text-embedding-004",
+    model='models/text-embedding-004',
     google_api_key=API_KEY
 )
 
@@ -54,7 +56,7 @@ db = FAISS.from_texts(chunks, embeddings)
 
 TOP_K = 5
 
-retriever = db.as_retriever(search_kwargs={"k": TOP_K})
+retriever = db.as_retriever(search_kwargs={'k': TOP_K})
 
 # -------------------------
 # Gemini LLM
@@ -64,7 +66,7 @@ TEMPERATURE = 0.2  # true value = 0.2
 
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash-lite",
+    model='gemini-2.0-flash-lite',
     google_api_key=API_KEY,
     temperature=TEMPERATURE,
     max_output_tokens=500
@@ -73,23 +75,35 @@ llm = ChatGoogleGenerativeAI(
 # -------------------------
 # Query
 # -------------------------
-query = "What happens if I miss a BeCode deadline?"
+
+Q_NUMBER = 3
+
+query = 'dummy stupid question'
+
+if( Q_NUMBER == 1 ):
+    query = 'What happens if I miss a BeCode deadline?'
+    
+if( Q_NUMBER == 2 ):
+    query = 'When are the first holidays?'
+    
+if( Q_NUMBER == 3 ):
+    query = 'Gimme a lnk to Discord channel'
 
 docs = retriever.invoke(query)
 
-context = "\n\n".join(d.page_content for d in docs)
+context = '\n\n'.join(d.page_content for d in docs)
 
-prompt = f"""
+prompt = f'''
 Use only the rules below.
 
 {context}
 
 Question:
 {query}
-"""
+'''
 
-print(llm.invoke(prompt).content)
+print('\nQ: -',query)
 
+print('A: -',llm.invoke(prompt).content)
 
-
-print('Job finished')
+print('\nJob finished')
